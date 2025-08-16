@@ -1,6 +1,6 @@
 <%#
- Maintained by eSirPlayground <https://www.youtube.com/c/esirplayground>
- Licensed to the public under the Apache License 2.0.
+ Maintained by eSirPlayground
+ Licensed to the public under the Apache License 2.0
 -%>
 
 <%+header%>
@@ -24,8 +24,8 @@
 	}
 
 	function check() {
-		if (tries++ < 12)
-			window.setTimeout(ping, 5000);
+		if (tries++ < 5)
+			window.setTimeout(ping, 3000);
 		else
 			alert('<%:Device unreachable%>');
 	}
